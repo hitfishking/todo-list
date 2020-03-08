@@ -1,5 +1,7 @@
 var axios = require('axios')
 
+//axios最简单的使用模式是：axios.get(url).then(res=>{}).catch(res=>{})
+
 // 创建实例时设置配置的默认值
 var instance = axios.create({
   baseURL: '/api',

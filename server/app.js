@@ -6,7 +6,7 @@ var moment = require('moment')
 var bodyParser = require("body-parser")
 var utils = require('./utils')
 
-var jwt    = require('jsonwebtoken'); // 使用jwt签名
+var jwt   = require('jsonwebtoken'); // 使用jwt签名
 
 var app = express()
 
@@ -67,7 +67,6 @@ io.on('connection',function(socket) {
   });
 });
 
-
 /**
  * 用户登录
  */
@@ -110,7 +109,6 @@ app.post('/user/login', (req, res) => {
     res.send(user)
   })
 })
-
 
 /**
  * 用户注册
